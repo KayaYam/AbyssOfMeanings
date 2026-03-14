@@ -1,0 +1,38 @@
+[project]
+name = "brain2"
+version = "0.1.0"
+description = "Second brain for cognitive science"
+authors = [{name = "Administrator", email = "kayagleb@yandex.ru"}]
+requires-python = ">=3.12,<3.14"
+
+dependencies = [
+    "python-dotenv>=1.0",
+    "ollama>=0.5",
+    "transformers>=5.3.0",          # без указания extras → torch НЕ подтягивается
+    "sentence-transformers>=2.2.2",
+    "sqlalchemy>=2.0",
+    "tqdm>=4.66.1",
+    "pdfplumber>=0.10.0",
+    "pdfminer-six>=20221220",
+    "pymupdf>=1.23.5",
+    "requests (>=2.32.5,<3.0.0)",
+    "faiss-cpu (>=1.13.2,<2.0.0)",
+    "python-telegram-bot (>=22.6,<23.0)",
+    "openai (>=2.28.0,<3.0.0)"
+]
+
+# Указываем, откуда брать пакет
+[tool.poetry]
+packages = [{include = "brain2", from = "src"}]
+
+# (опционально) CLI‑скрипт
+[tool.poetry.scripts]
+brain2 = "brain2.cli.__init__:main"
+ask = "brain2.cli.ask:main"
+bulk-collect = "brain2.cli.bulk_download:main"
+init_db = "brain2.cli.init_db:main"
+brain-digest = "brain2.cli.library_digest:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
