@@ -1,0 +1,22 @@
+# Download Configuration
+
+## Source Configurations
+
+### arXiv
+- **Search Query**: ("human behavior" OR "game theory" OR "decision making" OR "emotions" OR "meditation" OR "yoga")
+- **Categories**: q-bio.CB, q-bio.NC, q-bio.PE, q-bio.TO, q-bio.MN
+
+### Semantic Scholar
+- **Search Query**: ("human behavior" OR "game theory" OR "decision making" OR "emotions" OR "meditation" OR "yoga")
+- **Keywords by Author**: 
+  - Brene Brown
+  - Ray Dalio
+  - Robert Wright
+  - Yuval Noah Harari
+  - Sapolsky
+  - Chödron
+  - Gerd Gigerenzer
+
+## Notes
+- Ensure that the queries address all relevant sectors of the q-bio categories wherever applicable.
+- Tailor search results and filters based on emerging trends in the mentioned areas.
