@@ -31,9 +31,8 @@ from brain2.cli import index
 
 try:
     from brain2.cli import folder_import, extract, index, library_digest
-    # ВАЖНО: Импортируем сами модули, чтобы обращаться к ним semantic_downloader.search...
-    from brain2 import semantic_downloader
-    from brain2 import arxiv_downloader
+    # ВАЖНО: Импортируем новый единый модуль downloader
+    from brain2 import downloader
     print("✅ Все модули загружены")
 except ImportError as e:
     print(f"❌ Ошибка импорта: {e}")
@@ -46,12 +45,8 @@ def run_daily_update():
     # === ШАГ 0: АВТОНОМНЫЙ ПОИСК В СЕТИ ===
     print("\n[0/5] 🌐 Выхожу в интернет за новинками...")
     
-    # 1. Используем Semantic Scholar (он сам знает, что искать, если мы вызовем его штатно)
-    # Мы можем просто перечислить главные темы для поиска
-    arxiv_downloader.run() 
-    
-    # Запускаем Semantic Scholar с его паузами в 3.5 сек и проверкой валидности PDF
-    semantic_downloader.search_and_download()
+    # Используем новый единый модуль downloader
+    downloader.download_all()
     
     
     

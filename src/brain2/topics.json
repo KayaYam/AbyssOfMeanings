@@ -1,0 +1,158 @@
+{
+  "arxiv": {
+    "settings": {
+      "batch_size": 50,
+      "delay_seconds": 3,
+      "date_filter_days": 365,
+      "data_dir": "data/pdf"
+    },
+    "topics": [
+      {
+        "name": "consciousness",
+        "keywords": ["consciousness", "qualia", "phenomenology"],
+        "categories": ["q-bio.NC", "cs.AI", "physics.bio-ph"],
+        "exclude_terms": ["quantum consciousness"]
+      },
+      {
+        "name": "cognitive_science",
+        "keywords": ["cognitive science", "cognition", "mental models"],
+        "categories": ["cs.AI", "q-bio.NC", "physics.soc-ph"],
+        "exclude_terms": []
+      },
+      {
+        "name": "neuroscience",
+        "keywords": ["neuroscience", "neural networks", "brain"],
+        "categories": ["q-bio.NC", "q-bio.QM"],
+        "exclude_terms": ["deep learning only"]
+      },
+      {
+        "name": "philosophy_of_mind",
+        "keywords": ["philosophy of mind", "intentionality", "mental representation"],
+        "categories": ["physics.hist-ph"],
+        "exclude_terms": []
+      },
+      {
+        "name": "artificial_intelligence",
+        "keywords": ["artificial intelligence", "machine learning", "AGI"],
+        "categories": ["cs.AI", "cs.LG", "cs.NE"],
+        "exclude_terms": ["computer vision only"]
+      },
+      {
+        "name": "complexity_theory",
+        "keywords": ["complexity", "emergence", "self-organization"],
+        "categories": ["nlin.AO", "physics.soc-ph", "q-bio.PE"],
+        "exclude_terms": []
+      },
+      {
+        "name": "information_theory",
+        "keywords": ["information theory", "entropy", "semantic information"],
+        "categories": ["cs.IT", "physics.data-an"],
+        "exclude_terms": []
+      },
+      {
+        "name": "semiotics",
+        "keywords": ["semiotics", "sign theory", "meaning"],
+        "categories": ["physics.soc-ph", "cs.CL"],
+        "exclude_terms": []
+      },
+      {
+        "name": "linguistics",
+        "keywords": ["linguistics", "semantics", "pragmatics"],
+        "categories": ["cs.CL", "physics.soc-ph"],
+        "exclude_terms": []
+      },
+      {
+        "name": "psychology",
+        "keywords": ["psychology", "behavior", "perception"],
+        "categories": ["q-bio.NC", "physics.soc-ph"],
+        "exclude_terms": []
+      },
+      {
+        "name": "sociology",
+        "keywords": ["sociology", "social systems", "collective behavior"],
+        "categories": ["physics.soc-ph"],
+        "exclude_terms": []
+      },
+      {
+        "name": "anthropology",
+        "keywords": ["anthropology", "culture", "human evolution"],
+        "categories": ["physics.soc-ph", "q-bio.PE"],
+        "exclude_terms": []
+      },
+      {
+        "name": "epistemology",
+        "keywords": ["epistemology", "knowledge", "belief"],
+        "categories": ["physics.hist-ph"],
+        "exclude_terms": []
+      },
+      {
+        "name": "ontology",
+        "keywords": ["ontology", "metaphysics", "existence"],
+        "categories": ["physics.hist-ph"],
+        "exclude_terms": []
+      },
+      {
+        "name": "systems_theory",
+        "keywords": ["systems theory", "cybernetics", "control theory"],
+        "categories": ["nlin.AO", "cs.SY", "eess.SY"],
+        "exclude_terms": []
+      },
+      {
+        "name": "decision_theory",
+        "keywords": ["decision theory", "rationality", "game theory"],
+        "categories": ["cs.GT", "physics.soc-ph", "q-fin.TR"],
+        "exclude_terms": []
+      }
+    ]
+  },
+  "semantic_scholar": {
+    "settings": {
+      "batch_size": 20,
+      "delay_seconds": 5,
+      "date_filter_days": 730,
+      "data_dir": "data/pdf"
+    },
+    "topics": [
+      {
+        "name": "jung_carl",
+        "query": "Carl Jung analytical psychology archetypes",
+        "author_filter": null
+      },
+      {
+        "name": "campbell_joseph",
+        "query": "Joseph Campbell hero mythology monomyth",
+        "author_filter": null
+      },
+      {
+        "name": "frankl_viktor",
+        "query": "Viktor Frankl logotherapy meaning of life",
+        "author_filter": null
+      },
+      {
+        "name": "peterson_jordan",
+        "query": "Jordan Peterson maps of meaning archetypes",
+        "author_filter": ["Jordan B. Peterson"]
+      },
+      {
+        "name": "watts_alan",
+        "query": "Alan Watts philosophy eastern wisdom",
+        "author_filter": null
+      },
+      {
+        "name": "wilber_ken",
+        "query": "Ken Wilber integral theory consciousness",
+        "author_filter": ["Ken Wilber"]
+      },
+      {
+        "name": "laszlo_ervin",
+        "query": "Ervin Laszlo akashic field systems theory",
+        "author_filter": null
+      },
+      {
+        "name": "sheldrake_rupert",
+        "query": "Rupert Sheldrake morphic resonance",
+        "author_filter": ["Rupert Sheldrake"]
+      }
+    ]
+  }
+}
